@@ -1,0 +1,77 @@
+# backbone.txt
+# Topologia que simula a estrutura do RNP no Brasil, alguns nós omitidos.
+
+router
+
+#node	city	y	x	mpi-partition
+c1	NA	10	20
+c2	NA	15	50
+c3	NA	20	30
+c4	NA	25	60
+c5	NA	70	10
+c6	NA	60	25
+c7	NA	70	44
+c8	NA	100	30
+c9	NA	90	80
+c10	NA	15	20
+c11	NA	20	50
+c12	NA	25	30
+c13	NA	30	60
+c14	NA	70	15
+c15	NA	60	30
+c16	NA	70	49
+c17	NA	95	30
+c18	NA	85	80
+n1	NA	10	30	# RS
+n2	NA	15	40	# SC
+n3	NA	30	40	# SP
+n4	NA	30	50	# RJ
+n5	NA	60	10	# MT
+n6	NA	50	35	# GO
+n7	NA	55	40	# BSB
+n8	NA	100	40	# PA
+n9	NA	90	70	# CE
+p1	NA	35	40
+p2	NA	40	60
+p3	NA	40	45
+p4	NA	80	30
+
+link
+
+# from	    to		capacity	metric	delay	queue
+c1	    n1	10Mbps		1	1ms	100
+c2	    n2	10Mbps		1	1ms	100
+c3	    n3	10Mbps		1	1ms	100
+c4	    n4	10Mbps		1	1ms	100
+c5	    n5	10Mbps		1	1ms	100
+c6	    n6	10Mbps		1	1ms	100
+c7	    n7	10Mbps		1	1ms	100
+c8	    n8	10Mbps		1	1ms	100
+c9	    n9	10Mbps		1	1ms	100
+c10	    n1	10Mbps		1	1ms	100
+c11	    n2	10Mbps		1	1ms	100
+c12	    n3	10Mbps		1	1ms	100
+c13	    n4	10Mbps		1	1ms	100
+c14	    n5	10Mbps		1	1ms	100
+c15	    n6	10Mbps		1	1ms	100
+c16	    n7	10Mbps		1	1ms	100
+c17	    n8	10Mbps		1	1ms	100
+c18	    n9	10Mbps		1	1ms	100
+n1	    n2	10Mbps		1	1ms	100
+n1	    n3	10Mbps		1	1ms	100
+n2	    n3	10Mbps		1	1ms	100
+n3	    n4	10Mbps		1	1ms	100
+n3	    n5	10Mbps		1	1ms	100
+n3	    n9	10Mbps		1	1ms	100
+n4	    n7	10Mbps		1	1ms	100
+n4	    n9	10Mbps		1	1ms	100
+n5	    n6	10Mbps		1	1ms	100
+n6	    n7	10Mbps		1	1ms	100
+n6	    n8	10Mbps		1	1ms	100
+n7	    n8	10Mbps		1	1ms	100
+n7	    n9	10Mbps		1	1ms	100
+n8	    n9	10Mbps		1	1ms	100
+p1	    n3	10Mbps		1	1ms	100
+p2	    n4	10Mbps		1	1ms	100
+p3	    n6	10Mbps		1	1ms	100
+p4	    n8	10Mbps		1	1ms	100
